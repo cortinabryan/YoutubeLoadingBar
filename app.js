@@ -1,17 +1,15 @@
 const loadingBarItemEl = document.querySelector(".loading-bar__item");
 
 let width = 1;
-let loadingBar = setInterval(function () {
+
+let loadingBar = setInterval(function() {
   if (width >= 100) {
-    clearInterval(loadingBar)
+    clearInterval(loadingBar);
   } else {
     width++;
-    loadingBarItemEl.style.width = width + "%";
+    loadingBarItemEl.style.width = width + "%"
   }
-}, 10)
-
-
-
+})
 
 
 
